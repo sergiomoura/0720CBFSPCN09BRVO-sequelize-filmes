@@ -1,6 +1,6 @@
 const config = {
-    username: 'movies',
-    password: 'secret',
+    username: 'sergio',
+    password: 'vaiplaneta',
     database: 'filmes',
     host: 'localhost',
     dialect: 'mysql'
