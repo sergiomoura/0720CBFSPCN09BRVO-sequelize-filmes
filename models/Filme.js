@@ -25,5 +25,10 @@ module.exports = (sequelize, DataTypes) => {
             unsigned: true
         }
     },{timestamps: false, tableName: "filmes"}); // created_at e updated_at
+
+    Filme.associate = (models)=>{
+        Filme.belongsTo(models.Genero,{as:'genero',foreignKey:'genero_id'})
+    }
+
     return Filme;
 }
